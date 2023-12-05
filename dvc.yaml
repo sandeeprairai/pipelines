@@ -1,0 +1,17 @@
+params:
+- dvclive/params.yaml
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - train.py
+    params:
+    - params.yaml:
+     #out :
+     # -model.pkl
+
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step

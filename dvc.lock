@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: train.py
+      hash: md5
+      md5: 0d5ea5d3b45bf6bda0d657a638599574
+      size: 582
+    params:
+      params.yaml:
+        train:
+          epochs: 15
+          n_estimators: 5
+          max_depth: 6

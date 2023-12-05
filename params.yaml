@@ -1,0 +1,6 @@
+train:
+  epochs: 15
+  n_estimators: 5
+  max_depth: 6
+  test_perc: 0.2
+
